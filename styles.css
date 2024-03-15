@@ -1,0 +1,94 @@
+/* index.html */
+/* *{
+    outline: 2px solid red;
+  }
+   */
+h1{
+    background-color: black;
+    color:wheat;
+    text-align: center;
+    font-family: "Lucida Console",Helvetica,Arial;
+    padding: 10px;
+}
+
+.final-text{
+    text-align: center;
+}
+
+.principal-image{
+    text-align:center;
+    margin-top:180px;
+}
+
+/* empanadas.html */
+.blue{
+    color:rgb(108, 172, 228);
+}
+
+.emp-titles{
+    color:rgb(0, 77, 193);
+}
+
+/* ceviche.html */
+.cev-titles{
+    color:rgb(195, 61, 12);
+}
+
+.red{
+    color:rgb(200, 16, 46);
+}
+
+.emp-img{
+    display:inline-block;
+}
+
+/* tequeños.html */
+
+.teq-titles{
+    color:rgb(140, 22, 22);
+}
+.yellow{
+    color:rgb(252, 227, 0);
+}
+
+.ven-blue{
+    color:rgb(0, 61, 165);
+}
+
+.ven-red{
+    color:rgb(239, 51, 64);
+}
+
+/* General */
+
+a:link{
+    text-decoration: none;
+}
+.country{
+    font-family: "Courier New", "Lucida Console", "Arial";
+    font-weight: bold;
+    background-color: black;
+    width: 120px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.titles{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration:underline;
+}
+
+p,li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.white{
+    color:rgb(255, 255, 255);
+}
+
+.flag{
+    text-align:center;
+    width:"200px";
+}
+
