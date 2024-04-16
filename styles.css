@@ -1,15 +1,107 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
 /* index.html */
-/* *{
-    outline: 2px solid red;
-  }
-   */
+
 h1{
-    background-color: black;
-    color:wheat;
+    color:black;
+    border:1.5px solid black;
+    margin: 30px 600px;
     text-align: center;
+    font-size: 40px;
     font-family: "Lucida Console",Helvetica,Arial;
     padding: 10px;
 }
+
+.bar li{
+    display:inline;
+    margin:50px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.bar{
+    border:1px solid black;
+    padding:15px;
+    width: 1400px;
+    margin:0 auto;
+}
+
+.search input[type="text"]{
+    font-family: "Inter", sans-serif;
+    width: 700px;
+    margin: 15px auto;
+    display: block;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #E8D2AE;
+    border-radius: 10px;
+    border-style: none;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 36px;
+    margin:50px;
+}
+
+.recipe-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,400px);
+    gap:10px;
+    margin:0px auto;
+    /* justify-content: center; */
+}
+
+.card{
+    border:1px solid black;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    box-shadow: 10px 10px 5px #0000000f;
+    transition:transform 500ms;
+    overflow: hidden;
+    height: 510px;
+}
+
+.card:hover {
+    transform:scale(1.1);
+}
+
+.card:hover .recipe-name{
+    color:#1c4481;
+}
+
+.card .recipe-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    padding:15px 30px;
+}
+
+.card img{
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    padding:0px 30px;
+}
+
+.card .description{
+    font-family: "Inter", sans-serif;
+    padding:30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 
 .final-text{
     text-align: center;
@@ -61,8 +153,12 @@ h1{
 
 /* General */
 
-a:link{
+a{
+    color: inherit;
     text-decoration: none;
+}
+a:visited{
+    color: inherit;
 }
 .country{
     font-family: "Courier New", "Lucida Console", "Arial";

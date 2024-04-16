@@ -1,36 +1,78 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-        <title>Recipes</title>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>Recipes</title>
+</head>
 
-    </head>
-    
+<body>
+    <h1>KRAKOW'S RECIPES</h1>
+    <ul class="bar">
+        <li>Main</li>
+        <li>Side</li>
+        <li>Breakfast</li>
+        <li>Dinner</li>
+        <li>Snack</li>
+        <li>Dessert</li>
+        <li>Drink</li>
+        <li>Country</li>
+    </ul>
 
-    <body>
-        <h1>Krakow's Recipes</h1>
-        <p>"Patria Grande" is a term often used to refer to the concept of a united and integrated Latin America, emphasizing solidarity, cooperation, and shared cultural heritage among the countries of the region. This vision promotes the idea of a unified Latin American identity that transcends national borders and fosters collaboration for the collective well-being of its people.</p>
-        <p>The recipes that follow are some of the most well-known dishes from these countries.</p>
-        
-        <ul>
-            <li><a href="./recipes/empanadas.html">Empanadas argentinas</a></li>
-            <a href="./recipes/empanadas.html"><img src="https://media1.giphy.com/media/aGb0ZC01TzMUgscR23/giphy.gif" alt="" width="100px"></a>
-            
-            <li><a href="./recipes/ceviche.html">Ceviche</a></li>
-            <a href="./recipes/ceviche.html"><img src="https://media.baamboozle.com/uploads/images/421487/1641940428_73252_gif-url.gif" alt="" width="100px"></a>
-            
-            <li> <a href="./recipes/tequeños.html">Tequeños</a></li>
-            <a href="./recipes/tequeños.html"><img src="https://media3.giphy.com/media/tyhIChLIYzIYzLcoCw/200w.gif" alt="" width="100px"></a>
-        </ul>
-        
-        <p>oh wow such recipes</p>
-        <div class="principal-image">
-            <img src="https://i.pinimg.com/originals/88/6f/4d/886f4d7b2e5710cc4e5629eb556a8fd3.gif" alt="A chef being attacked by a raw chicken with a machete" width="100px" height="auto">
+    <div class="search">
+        <input type="text" placeholder="Find a recipe">
+    </div>
+
+    <h2> SOUTH AMERICAN RECIPES</h2>
+
+    <div class="recipe-cards">
+        <div class="card">
+            <a href="./recipes/empanadas.html">
+                <div class="recipe-content">
+                    <p class="recipe-name">Empanadas</p>
+                    <img src="https://resizer.glanacion.com/resizer/v2/empanadas-de-7IXBPJ5JHBDCBHSUDK3CFZ5XHU.jpg?auth=9455e6ab67367ad88ef7cc1b4e5246742b66a926f59d0a7dabaf15bc22919c10&width=768&height=512&quality=70&smart=true" alt="A plate with multiples Argentine empanadas">
+                    <p class="description">Savory pastries filled with seasoned ground beef, onions, olives, and eggs, baked or fried, beloved as a snack in Argentina.</p>
+                </div>
+            </a>
         </div>
-        <p class="final-text">time to cook my bois</p>
-        
-       
-    </body>
+
+        <div class="card">
+            <a href="./recipes/ceviche.html">
+                <div class="recipe-content">
+                    <p class="recipe-name">Ceviche</p>
+                    <img src="https://imag.bonviveur.com/ceviche-peruano-de-pescado.jpg" alt="A plate with ceviche" >
+                    <p class="description">A zesty Peruvian dish of fresh raw fish or seafood marinated in tangy citrus juices, mixed with onions, cilantro, and chili peppers for a refreshing burst of flavors. Ideal as an appetizer or light meal.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="./recipes/tequenhos.html">
+                <div class="recipe-content">
+                    <p class="recipe-name">Tequeños</p>
+                    <img src="https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2018/12/30092825/RFB-0000-30-tequen%CC%83os.jpg" alt="A plate with several tequeños and a sauce container" >
+                    <p class="description">Venezuelan snacks with cheese sticks wrapped in fried dough. Ideal for gatherings, providing a tasty blend of crispy and cheesy goodness.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="./recipes/bandeja_paisa.html">
+                <div class="recipe-content">
+                    <p class="recipe-name">Bandeja Paisa</p>
+                    <img src="https://cdn.colombia.com/gastronomia/2011/08/02/bandeja-paisa-1616.gif" alt="A plate of bandeja paisa, featuring rice, beans, ground meat, chicharrón, fried egg, avocado, plantains, and arepa">
+                    <p class="description">Colombian dish with rice, beans, meat, chicharrón, egg, avocado, plantains, and arepa. A hearty and flavorful meal popular throughout Colombia.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="principal-image">
+        <img src="https://i.pinimg.com/originals/88/6f/4d/886f4d7b2e5710cc4e5629eb556a8fd3.gif" alt="A chef being attacked by a raw chicken with a machete" width="100px" height="auto">
+    </div>
+    <p class="final-text">oh wow such recipes</p>
+
+</body>
 
 </html>
