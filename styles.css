@@ -1,94 +1,85 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #F3EAE4;
+}
 /* index.html */
-/* *{
-    outline: 2px solid red;
-  }
-   */
-h1{
-    background-color: black;
-    color:wheat;
-    text-align: center;
-    font-family: "Lucida Console",Helvetica,Arial;
-    padding: 10px;
+
+
+@font-face {
+    font-family: 'DK Display Patrol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DK Display Patrol Regular'), url('DK Display Patrol.woff') format('woff');
 }
 
-.final-text{
-    text-align: center;
+
+.title{
+    font-size:4rem;
+    color:#341612;
+    font-family: "DK Display Patrol Regular",Helvetica,Arial;
 }
 
-.principal-image{
-    text-align:center;
-    margin-top:180px;
+.title-container{
+    display: flex;
+    justify-content: center;
+    padding:2rem;
 }
 
-/* empanadas.html */
-.blue{
-    color:rgb(108, 172, 228);
+.subtitle{
+    font-size: 3rem;
+    color:#341612;
+    font-family: "DK Display Patrol Regular",Helvetica,Arial;
+}
+.subtitle-container{
+    margin: 4rem 0 1rem 0 ;
+    padding: 0.5rem;
+    width: 35%;
+    border-radius:0 1rem 1rem 0;
+    background-color: #E8D2AE;
 }
 
-.emp-titles{
-    color:rgb(0, 77, 193);
+.toolbar-container{
+    display:flex;
+    justify-content: center;
+}
+.toolbar-items{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color:#341612;
+    background-color: #FFFF;
+    width: 75%;
+    padding:1rem;
+    border-radius: 5rem;
+    display:flex;
+    justify-content: center;
+    filter: drop-shadow(1px 5px 3px #61412465);
 }
 
-/* ceviche.html */
-.cev-titles{
-    color:rgb(195, 61, 12);
+.toolbar-items li{
+    display: inline;
 }
 
-.red{
-    color:rgb(200, 16, 46);
-}
-
-.emp-img{
-    display:inline-block;
-}
-
-/* tequeños.html */
-
-.teq-titles{
-    color:rgb(140, 22, 22);
-}
-.yellow{
-    color:rgb(252, 227, 0);
-}
-
-.ven-blue{
-    color:rgb(0, 61, 165);
-}
-
-.ven-red{
-    color:rgb(239, 51, 64);
-}
-
-/* General */
-
-a:link{
+.toolbar-items li a{
+    padding:2.8rem; 
     text-decoration: none;
-}
-.country{
-    font-family: "Courier New", "Lucida Console", "Arial";
-    font-weight: bold;
-    background-color: black;
-    width: 120px;
-    padding: 10px;
-    font-size: 20px;
+    color: inherit;
 }
 
-.titles{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 25px;
-    text-decoration:underline;
+.recipe-cards{
+    display:flex;
+    justify-content: space-between;
 }
 
-p,li{
-    font-family: Arial, Helvetica, sans-serif;
+.card img{
+    width: 100px;
 }
-
-.white{
-    color:rgb(255, 255, 255);
-}
-
-.flag{
-    text-align:center;
-    width:"200px";
-}
-
