@@ -9,182 +9,77 @@
     padding:0;
 }
 
+body{
+    background-color: #F3EAE4;
+}
 /* index.html */
 
-h1{
-    color:black;
-    border:1.5px solid black;
-    margin: 30px 600px;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Lucida Console",Helvetica,Arial;
-    padding: 10px;
+
+@font-face {
+    font-family: 'DK Display Patrol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DK Display Patrol Regular'), url('DK Display Patrol.woff') format('woff');
 }
 
-.bar li{
-    display:inline;
-    margin:50px;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
+
+.title{
+    font-size:4rem;
+    color:#341612;
+    font-family: "DK Display Patrol Regular",Helvetica,Arial;
 }
 
-.bar{
-    border:1px solid black;
-    padding:15px;
-    width: 1400px;
-    margin:0 auto;
+.title-container{
+    display: flex;
+    justify-content: center;
+    padding:2rem;
 }
 
-.search input[type="text"]{
-    font-family: "Inter", sans-serif;
-    width: 700px;
-    margin: 15px auto;
-    display: block;
-    font-size: 20px;
-    padding: 10px 20px;
+.subtitle{
+    font-size: 3rem;
+    color:#341612;
+    font-family: "DK Display Patrol Regular",Helvetica,Arial;
+}
+.subtitle-container{
+    margin: 4rem 0 1rem 0 ;
+    padding: 0.5rem;
+    width: 35%;
+    border-radius:0 1rem 1rem 0;
     background-color: #E8D2AE;
-    border-radius: 10px;
-    border-style: none;
 }
 
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 36px;
-    margin:50px;
+.toolbar-container{
+    display:flex;
+    justify-content: center;
+}
+.toolbar-items{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color:#341612;
+    background-color: #FFFF;
+    width: 75%;
+    padding:1rem;
+    border-radius: 5rem;
+    display:flex;
+    justify-content: center;
+    filter: drop-shadow(1px 5px 3px #61412465);
+}
+
+.toolbar-items li{
+    display: inline;
+}
+
+.toolbar-items li a{
+    padding:2.8rem; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .recipe-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,400px);
-    gap:10px;
-    margin:0px auto;
-    /* justify-content: center; */
-}
-
-.card{
-    border:1px solid black;
-    margin-left: 50px;
-    display: grid;
-    grid-template-rows: max-content 200px 1fr;
-    box-shadow: 10px 10px 5px #0000000f;
-    transition:transform 500ms;
-    overflow: hidden;
-    height: 510px;
-}
-
-.card:hover {
-    transform:scale(1.1);
-}
-
-.card:hover .recipe-name{
-    color:#1c4481;
-}
-
-.card .recipe-name{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 35px;
-    padding:15px 30px;
+    display:flex;
+    justify-content: space-between;
 }
 
 .card img{
-    width:100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    padding:0px 30px;
+    width: 100px;
 }
-
-.card .description{
-    font-family: "Inter", sans-serif;
-    padding:30px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-
-.final-text{
-    text-align: center;
-}
-
-.principal-image{
-    text-align:center;
-    margin-top:180px;
-}
-
-/* empanadas.html */
-.blue{
-    color:rgb(108, 172, 228);
-}
-
-.emp-titles{
-    color:rgb(0, 77, 193);
-}
-
-/* ceviche.html */
-.cev-titles{
-    color:rgb(195, 61, 12);
-}
-
-.red{
-    color:rgb(200, 16, 46);
-}
-
-.emp-img{
-    display:inline-block;
-}
-
-/* tequeños.html */
-
-.teq-titles{
-    color:rgb(140, 22, 22);
-}
-.yellow{
-    color:rgb(252, 227, 0);
-}
-
-.ven-blue{
-    color:rgb(0, 61, 165);
-}
-
-.ven-red{
-    color:rgb(239, 51, 64);
-}
-
-/* General */
-
-a{
-    color: inherit;
-    text-decoration: none;
-}
-a:visited{
-    color: inherit;
-}
-.country{
-    font-family: "Courier New", "Lucida Console", "Arial";
-    font-weight: bold;
-    background-color: black;
-    width: 120px;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.titles{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 25px;
-    text-decoration:underline;
-}
-
-p,li{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.white{
-    color:rgb(255, 255, 255);
-}
-
-.flag{
-    text-align:center;
-    width:"200px";
-}
-
